@@ -1,5 +1,5 @@
 # Purpose
-A healthcare application to determine what disease you may be suffering from depending on symptoms you tell!
+A healthcare application to simulate a hospital, and to determine what disease you may be suffering from depending on symptoms you tell, and provide recommendations!
 
 # Languages used  
  - HTML/CSS: Website front-end, **index.html**, connecting to the database administration and models, or item types, using the user input.
