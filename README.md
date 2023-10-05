@@ -15,5 +15,16 @@ A healthcare application to determine what disease you may be suffering from dep
 # Terminals used
  - Command Line Interface: Test and deploy your website through the Django provided files to connect the front-end, the models, the URLs, and the database.
 
-# Website Models [https://icon-library.com/icon/command-line-icon-12.html.html]
- - 
+# Website Models (in models.py)
+ - User:  Stores the username, password, and personal information of all users.
+ - Disease: Users are diagnosed based on which diseases contain the symptoms that they have.
+ - Symptom:  What are stored as attributes in the **User** models that will be mapped via MySQL to the different diseases stored in the MySQL database.
+ - Hospital: Stores the database of registered users, discovered diseases, and images of symptoms that are inputted into the users' submitted diagnoses.
+
+# Process
+❶ **admin.py** will register all models in the website to enable the usage of the models.
+❷ **signup.html** asks for a new user's info that will be inputted into the database.
+❸ **views.py** processes the newly registered user's information to create instances of the different models in the website.
+❹ **process.php** will take the newly inputted user's data, then send a confirmation email to the inputted user's email.  If the user is signing in, it will send a code to the user's inputted phone number as two-factor authentication.
+5️ **find.py** will allow the user to input their diagnosis symptoms and any visual evidence, then send it to be mapped to the hospital database.
+6️ **search.php** will search through the database for the user's disease based on their symptoms. They will then receive an email back containing their diagnosis and recommended treatments.
