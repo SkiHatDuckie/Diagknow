@@ -15,3 +15,5 @@ A healthcare application to determine what disease you may be suffering from dep
 # Terminals used
  - Command Line Interface: Test and deploy your website through the Django provided files to connect the front-end, the models, the URLs, and the database.
 
+# Website Models [https://icon-library.com/icon/command-line-icon-12.html.html]
+ - 
