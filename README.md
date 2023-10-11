@@ -25,6 +25,24 @@ A healthcare application to simulate a hospital, and to determine what disease y
 ❶ **admin.py** will register all models in the website to enable the usage of the models. <br/>
 ❷ **signup.html** asks for a new user's info that will be inputted into the database. <br/>
 ❸ **views.py** processes the newly registered user's information to create instances of the different models in the website. <br/>
-❹ **process.php** will take the newly inputted user's data, then send a confirmation email to the inputted user's email.  If the user is signing in, it will send a code to the user's inputted phone number as two-factor authentication. <br/>
+❹ **process.php** will take the newly inputted user's data, then send a con
+firmation email to the inputted user's email.  If the user is signing in, it will send a code to the user's inputted phone number as two-factor authentication. <br/>
 5️ **find.py** will allow the user to input their diagnosis symptoms and any visual evidence, then send it to be mapped to the hospital database. <br/>
 6️ **search.php** will search through the database for the user's disease based on their symptoms. They will then receive an email back containing their diagnosis and recommended treatments. <br/>
+
+# Goals
+1. **Django Development**:
+   - To be able to use the Django Python library to create an object-oriented interface to a website.
+   - To create and use models to be able to interface with an HTML form.
+2. **PHP Introduction**:
+   - Learn how to implement PHP as a backend to an HTML page.
+   - Learn how to connect to and interface with a MySQL table using PHP commands.
+   - Learn how to send and modify files through email via PHP.
+4. **MySQL introduction**:
+   - Learn how to set up a configuration file for a database.
+   - Create and host a database on a server and to add and retrieve data and analytics.
+   - Learn how to log into a server and send commands to the the table remotely.
+  
+     
+  
+   
