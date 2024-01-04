@@ -1,48 +1,70 @@
-# Purpose
-A healthcare application to simulate a hospital, and to determine what disease you may be suffering from depending on symptoms you tell, and provide recommendations!
+# Getting Started with Create React App
 
-# Languages used  
- - HTML/CSS: Website front-end, **index.html**, connecting to the database administration and models, or item types, using the user input.
- - Python: Used in the administration and interface between models and the database of the website, and the catalog of URLs.
- - JavaScript: Used for symptom mapping, disease detection, and graphing of data. 
- - PHP/MySQL: Used to fetch data from the database, and for forming the database as well.  Also used for organization and mapping of data, and most importantly user registration and data input and server management. 
- - CLI (Command line interface): Testing and deploying the system through Django, and for creating the database for the hospital, and inputting data into the database, or for dynamic user data allocation.  Essentially used to interface with the server that hosts the website and to monitor data storage. 
-   
-# Packages used
- - Django:  Python framework using **client-side tools** and **command-line interface** to create, test and deploy apps in as little time as possible.
- - MySQL:  An open-source database software that uses SQL (Structured query language) to work with your computer's operating system to manage users,  permit network access, facilitates beta testing, creates backups, and implements a relational database in the OS. It generates PHP to the server using the parameters in the database.
- 
-# Terminals used
- - Command Line Interface: Test and deploy your website through the Django provided files to connect the front-end, the models, the URLs, and the database.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Website Models (in models.py)
- - User:  Stores the username, password, and personal information of all users.
- - Disease: Users are diagnosed based on which diseases contain the symptoms that they have.
- - Symptom:  What are stored as attributes in the **User** models that will be mapped via MySQL to the different diseases stored in the MySQL database.
- - Hospital: Stores the database of registered users, discovered diseases, and images of symptoms that are inputted into the users' submitted diagnoses.
+## Available Scripts
 
-# Process
-❶ **admin.py** will register all models in the website to enable the usage of the models. <br/>
-❷ **signup.html** asks for a new user's info that will be inputted into the database. <br/>
-❸ **views.py** processes the newly registered user's information to create instances of the different models in the website. <br/>
-❹ **process.php** will take the newly inputted user's data, then send a con
-firmation email to the inputted user's email.  If the user is signing in, it will send a code to the user's inputted phone number as two-factor authentication. <br/>
-5️ **find.py** will allow the user to input their diagnosis symptoms and any visual evidence, then send it to be mapped to the hospital database. <br/>
-6️ **search.php** will search through the database for the user's disease based on their symptoms. They will then receive an email back containing their diagnosis and recommended treatments. <br/>
+In the project directory, you can run:
 
-# Goals
-1. **Django Development**:
-   - To be able to use the Django Python library to create an object-oriented interface to a website.
-   - To create and use models to be able to interface with an HTML form.
-2. **PHP Introduction**:
-   - Learn how to implement PHP as a backend to an HTML page.
-   - Learn how to connect to and interface with a MySQL table using PHP commands.
-   - Learn how to send and modify files through email via PHP.
-4. **MySQL introduction**:
-   - Learn how to set up a configuration file for a database.
-   - Create and host a database on a server and to add and retrieve data and analytics.
-   - Learn how to log into a server and send commands to the the table remotely.
-  
-     
-  
-   
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

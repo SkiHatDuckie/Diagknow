@@ -5,7 +5,9 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'catalog.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hospitalsim.settings')
+    from django.core.wsgi import get_wsgi_application
+    application = get_wsgi_application()
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
