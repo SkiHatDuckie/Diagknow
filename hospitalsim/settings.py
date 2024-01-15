@@ -37,21 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalog.apps.CatalogConfig', #This object was created for us in /catalog/apps.py
+    'catalog.apps.CatalogConfig',
     'rest_framework',
-    'catalog.models.Illness',
-    'catalog.models.Symptom',
-    'catalog.models.User',
-    'catalog.models.Doctor',
-    'catalog.models.User',
-    'catalog.models.Hospital'
-    'corsheaders'
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -74,11 +69,6 @@ TEMPLATES = [
             ],
         },
     },
-]
-
-MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
 ]
 
 WSGI_APPLICATION = 'hospitalsim.wsgi.application'

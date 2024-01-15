@@ -5,7 +5,7 @@ from django.urls import reverse # Used to generate URLs by reversing the URL pat
 
 # Create your models here.
 from django.views.decorators.http import condition
-from newsite.catalog import models
+from catalog import models
 
 
 class Illness(models.Model):
@@ -52,8 +52,6 @@ class User(models.Model):
         return condition
 
     def getSymptoms(self):
-        return symptoms.split(' ,',symptoms)
+        return self.symptoms.split(' ,', self.symptoms)
 
-
-
-     
+  
