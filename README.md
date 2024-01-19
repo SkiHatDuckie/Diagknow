@@ -16,6 +16,10 @@ haven't already. Once you've done that, run the following:
 
 This will install all of the necessary dependencies for working on the project.
 
+You can install our Django app by cloning it above or entering:
+
+`git clone '
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
