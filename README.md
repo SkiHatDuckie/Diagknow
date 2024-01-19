@@ -18,7 +18,37 @@ This will install all of the necessary dependencies for working on the project.
 
 You can install our Django app by cloning it above or entering:
 
-`git clone '
+`git clone https://github.com/oscuml/Diagknow.git'
+
+The website's Django infrastructure is under construction, so you can add modules via the format 
+`class Person(models.Model):`
+`    SHIRT_SIZES = {`
+`        "S": "Small",`
+`        "M": "Medium",`
+`        "L": "Large",`
+`    }`
+`    name = models.CharField(max_length=60)`
+`    shirt_size = models.CharField(max_length=1, choices=SHIRT_SIZES)`
+
+To make changes, you must log the changes on the migrations.py file, via the format:
+`class Migration(migrations.Migration):`
+ `   dependencies = [("migrations", "0001_initial")]`
+
+ `   operations = [`
+ `       migrations.DeleteModel("Tribble"),`
+ `       migrations.AddField("Author", "rating", models.IntegerField(default=0)),`
+ `   ]`
+
+To include these migrations, type the command `python manage.py makemigrations` then `python manage.py migrate`.
+
+This will then create a file `0001_initial.py` in our case, which will contain the changes made to the website.
+
+More details can be found here:  https://docs.djangoproject.com/en/5.0/topics/migrations/
+
+Operations that can be done to shortcut modifications to the website are also shown here: https://docs.djangoproject.com/en/4.2/ref/migration-operations/
+
+**This must be done for every change to the website.**
+	
 
 # Getting Started with Create React App
 
