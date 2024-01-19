@@ -1,6 +1,6 @@
 from django.urls import reverse # Used to generate URLs by reversing the URL patterns
 
-from newsite.catalog import models
+from catalog import models
 
 
 class user(models.Model):
@@ -29,5 +29,5 @@ class user(models.Model):
         return reverse('book-detail', args=[str(self.id)])
 
     def getSymptoms(self):
-        return symptoms.split(' ,',symptoms)
+        return self.symptoms.split(' ,', self.symptoms)
     

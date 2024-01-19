@@ -1,3 +1,21 @@
+# Contributing to DiagKnow
+
+This project is currently built using Python v3.10.11.
+
+Before installing django or any other dependencies, create a new virtual environment for django
+projects, if one does not already exist.
+
+`python -m venv /path/to/new/virtual/environment/django-env`
+
+For more information on setting up a virtual environment, use this [user guide](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments).
+
+Once the virtual environment is set up, activate it and traverse to the project directory if you
+haven't already. Once you've done that, run the following:
+
+`pip install requirements.txt`
+
+This will install all of the necessary dependencies for working on the project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

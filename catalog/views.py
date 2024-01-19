@@ -12,7 +12,7 @@ def current_datetime(request):
     return HttpResponse(html)
 
 def index(request):
-    hospital = models.Hospital
+    hospital = Hospital
     context = {
         'location': 'billerica',
         'users': {
